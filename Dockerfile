@@ -21,4 +21,4 @@ COPY . /usr/src/app
 EXPOSE 8000
  
 # Run grunt serve inside the container to start the JET app
-CMD ["ojet", "serve"]
+CMD ["ojet", "serve", "--server-only", "--server-port=8000", "--livereload=false"]
